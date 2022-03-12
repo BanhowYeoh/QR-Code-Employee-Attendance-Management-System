@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".EmpRecords">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_below= "@+id/Logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Caption1"
+                android:text="Employee ID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/txtEmpID"
+                android:text=""
+                android:hint="Key in Employee ID"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="7dip"
+                android:paddingBottom="7dip"
+                android:layout_below="@+id/Caption1"
+                android:singleLine="true"
+                android:background="@drawable/txtborder"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/Caption2"
+                android:text="Employee Name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:layout_below="@+id/txtEmpID"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/txtEmpName"
+                android:text=""
+                android:hint="Key in Employee Name"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="7dip"
+                android:paddingBottom="7dip"
+                android:layout_below="@+id/Caption2"
+                android:singleLine="true"
+                android:background="@drawable/txtborder"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/Caption3"
+                android:text="Email Address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:layout_below="@+id/txtEmpName"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:text=""
+                android:hint="Key in Valid Email Address"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="7dip"
+                android:paddingBottom="7dip"
+                android:layout_below="@+id/Caption3"
+                android:singleLine="true"
+                android:background="@drawable/txtborder"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/Caption4"
+                android:text="Contact No"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:layout_below="@+id/txtEmail"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/txtContactNo"
+                android:text=""
+                android:hint="Key in Valid Contact No"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="7dip"
+                android:paddingBottom="7dip"
+                android:phoneNumber="true"
+                android:maxLength="11"
+                android:layout_below="@+id/Caption4"
+                android:singleLine="true"
+                android:background="@drawable/txtborder"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/Caption6"
+                android:text="Basic Salary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:layout_below="@+id/txtContactNo"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/txtBasic"
+                android:text=""
+                android:hint="Key in Basic Salary"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="7dip"
+                android:paddingBottom="7dip"
+                android:layout_below="@+id/Caption6"
+                android:singleLine="true"
+                android:numeric="decimal"
+                android:background="@drawable/txtborder"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/Caption7"
+                android:text="Working Hours (Time In)"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:layout_below="@+id/txtBasic"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/txtStartTime"
+                android:textStyle="normal"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="7dip"
+                android:paddingBottom="7dip"
+                android:layout_below="@+id/Caption7"
+                android:background="@drawable/txtborder"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/Caption8"
+                android:text="Working Hours (Time Out)"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:layout_below="@+id/txtStartTime"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/txtEndTime"
+                android:gravity="left"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="7dip"
+                android:paddingBottom="7dip"
+                android:layout_below="@+id/Caption8"
+                android:background="@drawable/txtborder"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/Caption10"
+                android:text="OT Entitile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:layout_below="@+id/txtEndTime"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Spinner
+                android:id="@+id/spOTEntitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/txtborder"
+                android:layout_below="@+id/Caption10"/>
+
+            <TextView
+                android:id="@+id/Caption5"
+                android:text="User Type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:layout_below="@+id/spOTEntitle"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Spinner
+                android:id="@+id/spUserType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/txtborder"
+                android:layout_below="@+id/Caption5"/>
+
+
+            <TextView
+                android:id="@+id/Caption9"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#000"
+                android:layout_below="@+id/spUserType"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="2"
+        />
+
+</RelativeLayout>

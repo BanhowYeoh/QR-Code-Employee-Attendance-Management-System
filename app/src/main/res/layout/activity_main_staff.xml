@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".MainStaff">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/banner" />
+
+    <TextView
+        android:id="@+id/txtBlank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentLeft="true"
+        android:background="@color/PrimaryColor"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/txtBlank1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:paddingTop = "5dp"
+        android:paddingBottom ="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@color/PrimaryColor" />
+
+    <TextView
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white"
+        android:paddingTop = "10dp"
+        android:paddingLeft = "20dp"
+        android:paddingRight ="20dp"
+        android:paddingBottom= "10dp"
+        android:textStyle="bold"
+        android:background="@color/PrimaryColor"
+        android:layout_alignParentRight="true"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/txtTitle2"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/logo"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtTitle3"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtTitle2"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/idIVQRCode"
+        android:padding="10dp"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtTitle3"
+        android:src="@drawable/scanner" />
+
+    <Button
+        android:id="@+id/btnAttRecords"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Attendance Records" />
+
+</RelativeLayout>

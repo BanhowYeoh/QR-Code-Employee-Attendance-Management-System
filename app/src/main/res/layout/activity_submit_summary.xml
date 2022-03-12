@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".SubmitSummary">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/Title01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@+id/logo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Check-In Details"/>
+
+    <TextView
+        android:id="@+id/Title02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@+id/Title01"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Location"/>
+
+    <TextView
+        android:id="@+id/Title03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/Title02"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/app_compNameAdd"/>
+
+    <TextView
+        android:id="@+id/Title04"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/Title03"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/Title05"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/Title04"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/Title06"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/Title05"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Class"/>
+
+    <TextView
+        android:id="@+id/Title07"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/Title06"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/Title08"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/Title07"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date"/>
+
+    <TextView
+        android:id="@+id/Title09"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/Title08"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/Title10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/Title09"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Time"/>
+
+    <TextView
+        android:id="@+id/Title11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:textColor="#000"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/Title10"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/Title12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@+id/Title11"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Thank You!"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewEmpRecords">
+
+    <EditText
+        android:id="@+id/txtEmpName"
+        android:hint="Search Employee Name"
+        android:textStyle="normal"
+        android:gravity="left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:singleLine="true"
+        android:background="@drawable/txtborder"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="RtlCompat" />
+
+    <ListView
+        android:id="@+id/listEMployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmpName"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+</RelativeLayout>

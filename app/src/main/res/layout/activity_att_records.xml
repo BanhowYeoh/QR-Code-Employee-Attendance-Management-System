@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".AttRecords">
+
+    <Spinner
+        android:id="@+id/spNameList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/BackDate"
+        android:text="@string/ArrowBackDate"
+        android:textSize="17sp"
+        android:paddingTop="5dp"
+        android:layout_width="30dp"
+        android:layout_height="37dp"
+        android:background="@color/PrimaryColor"
+        android:textColor="@color/white"
+        android:layout_below="@+id/spNameList"
+        android:gravity="center|center_horizontal"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/SearchDate1"
+        android:text=""
+        android:textSize="14sp"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:background="@color/PrimaryColor"
+        android:textColor="@color/white"
+        android:layout_below="@+id/spNameList"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:layout_toRightOf="@+id/BackDate"
+        />
+
+    <TextView
+        android:id="@+id/DateDot"
+        android:text=" : "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:background="@color/PrimaryColor"
+        android:textColor="@color/white"
+        android:layout_below="@+id/spNameList"
+        android:layout_centerHorizontal="true"
+        android:layout_height="37dp" />
+    <TextView
+        android:id="@+id/Date"
+        android:text="Record Month  "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        android:background="@color/PrimaryColor"
+        android:textColor="@color/white"
+        android:layout_below="@+id/spNameList"
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:layout_toLeftOf="@+id/DateDot"
+        android:layout_height="37dp" />
+
+    <TextView
+        android:id="@+id/SearchDate"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:layout_width="110dp"
+        android:layout_height="37dp"
+        android:background="@color/PrimaryColor"
+        android:textColor="@color/white"
+        android:layout_below="@+id/spNameList"
+        android:gravity="center|center_horizontal"
+        android:layout_toRightOf="@+id/DateDot"
+        />
+
+    <Button
+        android:id="@+id/ForwardDate"
+        android:text="@string/ArrowNextDate"
+        android:gravity="center|center_horizontal"
+        android:textSize="17sp"
+        android:paddingTop="5dp"
+        android:layout_width="30dp"
+        android:layout_height="37dp"
+        android:background="@color/PrimaryColor"
+        android:textColor="@color/white"
+        android:layout_below="@+id/spNameList"
+        android:layout_alignParentRight="true"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:id="@+id/connect"
+        android:text="Search"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/PrimaryColor"
+        android:textColor="@color/white"
+        android:layout_below="@+id/spNameList"
+        android:layout_toRightOf="@+id/ForwardDate"
+        android:visibility="invisible"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <TextView
+        android:id="@+id/Caption1"
+        android:text="  "
+        android:textStyle=""
+        android:textColor="#3B5998"
+        android:gravity="center_vertical"
+        android:background="#F5F6F7"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/SearchDate1"/>
+
+    <View
+        android:id="@+id/Separator00"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Caption1"
+        android:background="@android:color/darker_gray"/>
+
+    <WebView
+        android:id="@+id/WebView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Separator00"
+        android:scrollbars="vertical">
+    </WebView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="2"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">QRYeoh Attendance</string>
+    <string name="app_compName">SPF EXCEL SDN BHD</string>
+    <string name="app_compNameAdd">SPF EXCEL SDN BHD 7282, Jalan Kampung Baru, Taman Industri Sungai Puyu,13400 Butterworth, Penang</string>
+
+    <string name="filename_staffhistory">http://www.qryeoh.com/att/historyall.php</string>
+    <string name="filename_history">http://www.qryeoh.com/att/historyall.php?id=</string>
+    <string name="filename_login">http://www.qryeoh.com/att/login.php</string>
+    <string name="filename_register">http://www.qryeoh.com/att/register.php</string>
+    <string name="filename_resetpword">http://www.qryeoh.com/att/retrivelogin.php</string>
+    <string name="filename_emplist">http://www.qryeoh.com/att/emplist.php</string>
+    <string name="filename_delemp">http://www.qryeoh.com/att/deleteuser.php</string>
+    <string name="filename_updateemp">http://www.qryeoh.com/att/updateuser.php</string>
+    <string name="filename_searchemp">http://www.qryeoh.com/att/searchemp.php</string>
+    <string name="filename_insertatt">http://www.qryeoh.com/att/insertentry.php</string>
+
+    <string name="filename_empnamelist">http://www.qryeoh.com/att/empnamelist.php</string>
+
+    <string name="ArrowBackDate">&lt;&lt;</string>
+    <string name="ArrowNextDate">&gt;&gt;</string>
+
+    <string name="AbtDetails1">Developed By :\n<b>YEOH BAN HOW</b></string>
+    <string name="AbtDetails2">Student ID :\n<b>041170452</b></string>
+    <string name="AbtDetails3">Course Code :\n<b>TSE309/10</b></string>
+    <string name="AbtDetails4">Course Title :\n<b>SE PROJECT</b></string>
+    <string name="AbtDetails5">Project Supervisor :\n<b>VIMALA A/P DORAISAMY</b></string>
+    <string name="AbtDetails6">Course Lead :\n<b>DR TAN CHOON JUN</b></string>
+    <string name="AbtDetails7">Project Title :\n<b>QR CODE BASED ATTENDANCE MANAGEMENT SYSTEM</b></string>
+
+    <string name="AbtDetails8">WAWASAN OPEN UNIVERSITY</string>
+    <string name="AbtDetails9">(PENANG REGIONAL CENTRE)</string>
+</resources>
